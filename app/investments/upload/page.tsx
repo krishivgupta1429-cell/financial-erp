@@ -122,7 +122,7 @@ export default function InvestmentUploadPage() {
               <h3 className="font-semibold text-white mb-3">Fill in the Template</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-400">
                 {[
-                  ['Family Member', 'Vishal / Kavita / Shubh / Krishiv Gupta'],
+                  ['Family Member', 'Vishal / Kavita / Shubh / Krishiv / Manohar Lal / Daya Gupta or HUF'],
                   ['Investment Type', 'Pick from dropdown (NSC, FD, MF, etc.)'],
                   ['Institution Name', 'Bank, Post Office, AMC name'],
                   ['Principal Amount', 'Numbers only, no ₹ symbol'],

@@ -9,7 +9,7 @@ import { supabase } from '@/lib/supabase'
 import { FamilyMember } from '@/types'
 
 const AVATAR_COLORS = ['#6366f1', '#ec4899', '#f59e0b', '#10b981', '#8b5cf6', '#06b6d4']
-const RELATIONSHIPS = ['Owner', 'Spouse', 'Child', 'Parent', 'Sibling', 'Other']
+const RELATIONSHIPS = ['Owner', 'Spouse', 'Child', 'Father', 'Mother', 'HUF', 'Parent', 'Sibling', 'Other']
 
 const emptyForm = { full_name: '', relationship: 'Owner', pan_number: '', aadhaar_number: '', date_of_birth: '', email: '', phone: '', avatar_color: '#6366f1' }
 

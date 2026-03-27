@@ -1,7 +1,16 @@
 import { NextResponse } from 'next/server'
 import * as XLSX from 'xlsx'
 
-const FAMILY_MEMBERS = ['Vishal Gupta', 'Kavita Gupta', 'Shubh Gupta', 'Krishiv Gupta']
+const FAMILY_MEMBERS = [
+  'Vishal Gupta',
+  'Kavita Gupta',
+  'Shubh Gupta',
+  'Krishiv Gupta',
+  'Vishal Gupta (HUF)',
+  'Manohar Lal Gupta (HUF)',
+  'Manohar Lal Gupta',
+  'Daya Gupta',
+]
 
 const INVESTMENT_TYPES = [
   'NSC (National Savings Certificate)',
