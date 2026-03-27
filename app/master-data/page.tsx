@@ -167,7 +167,7 @@ export default function MasterDataPage() {
     <MainLayout>
       <div className="p-6 space-y-6 max-w-4xl mx-auto">
         <PageHeader
-          icon={<DatabaseZap size={20} />}
+          icon={DatabaseZap}
           title="Master Data Upload"
           subtitle="Upload PAN, Aadhaar, bank accounts, UPI IDs and more for all family members"
         />

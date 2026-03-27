@@ -206,7 +206,7 @@ export default function InvestmentUploadPage() {
     <MainLayout>
       <div className="p-6 space-y-6 max-w-4xl mx-auto">
         <PageHeader
-          icon={<TrendingUp size={20} />}
+          icon={TrendingUp}
           title="Upload Investments"
           subtitle="Import investments via Excel template, PDF/Word documents, or paste a screenshot"
           action={

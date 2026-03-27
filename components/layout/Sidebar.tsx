@@ -5,7 +5,8 @@ import { usePathname } from 'next/navigation'
 import {
   LayoutDashboard, Users, Building2, CreditCard,
   TrendingUp, Shield, Landmark, IndianRupee,
-  Menu, X, ChevronLeft, ChevronRight, DatabaseZap
+  Menu, X, ChevronLeft, ChevronRight, DatabaseZap,
+  Home, Coins
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
@@ -15,6 +16,8 @@ const navItems = [
   { href: '/bank-accounts', label: 'Bank Accounts', icon: Building2 },
   { href: '/credit-cards', label: 'Credit Cards', icon: CreditCard },
   { href: '/investments', label: 'Investments', icon: TrendingUp },
+  { href: '/real-estate', label: 'Real Estate', icon: Home },
+  { href: '/gold', label: 'Gold', icon: Coins },
   { href: '/insurance', label: 'Insurance', icon: Shield },
   { href: '/liabilities', label: 'Liabilities', icon: Landmark },
   { href: '/master-data', label: 'Master Data', icon: DatabaseZap },
