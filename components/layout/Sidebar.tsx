@@ -6,12 +6,13 @@ import {
   LayoutDashboard, Users, Building2, CreditCard,
   TrendingUp, Shield, Landmark, IndianRupee,
   Menu, X, ChevronLeft, ChevronRight, DatabaseZap,
-  Home, Coins
+  Home, Coins, Inbox
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/inbox', label: 'Financial Inbox', icon: Inbox },
   { href: '/family', label: 'Family Members', icon: Users },
   { href: '/bank-accounts', label: 'Bank Accounts', icon: Building2 },
   { href: '/credit-cards', label: 'Credit Cards', icon: CreditCard },
