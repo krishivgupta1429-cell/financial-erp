@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import {
   LayoutDashboard, Users, Building2, CreditCard,
   TrendingUp, Shield, Landmark, IndianRupee,
-  Menu, X, ChevronLeft, ChevronRight
+  Menu, X, ChevronLeft, ChevronRight, DatabaseZap
 } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
@@ -17,6 +17,7 @@ const navItems = [
   { href: '/investments', label: 'Investments', icon: TrendingUp },
   { href: '/insurance', label: 'Insurance', icon: Shield },
   { href: '/liabilities', label: 'Liabilities', icon: Landmark },
+  { href: '/master-data', label: 'Master Data', icon: DatabaseZap },
 ]
 
 export default function Sidebar() {
