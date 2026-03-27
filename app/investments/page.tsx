@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react'
 import MainLayout from '@/components/layout/MainLayout'
 import PageHeader from '@/components/ui/PageHeader'
 import Modal from '@/components/ui/Modal'
-import { TrendingUp, Plus, Edit2, Trash2, Calendar, Clock, AlertCircle, IndianRupee, Filter } from 'lucide-react'
+import { TrendingUp, Plus, Edit2, Trash2, Calendar, Clock, AlertCircle, IndianRupee, Upload } from 'lucide-react'
+import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import { FamilyMember } from '@/types'
 
@@ -237,7 +238,16 @@ export default function InvestmentsPage() {
   return (
     <MainLayout>
       <PageHeader title="Investments" subtitle="Track all investments, maturity dates & interest credits" icon={TrendingUp}
-        action={<button onClick={openAdd} className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-medium transition-colors"><Plus size={16} /> Add Investment</button>}
+        action={
+          <div className="flex gap-2">
+            <Link href="/investments/upload" className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-xl text-sm font-medium transition-colors">
+              <Upload size={16} /> Bulk Upload
+            </Link>
+            <button onClick={openAdd} className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-medium transition-colors">
+              <Plus size={16} /> Add Investment
+            </button>
+          </div>
+        }
       />
 
       {/* Alert banners */}
